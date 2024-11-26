@@ -1,0 +1,19 @@
+version: "3.6"
+
+services:
+
+  solida-view:
+    image: quay.io/biocontainers/panoptes-ui:0.2.3--pyh7cba7a3_0
+    container_name: solida-view
+    ports:
+      - "${PORT}:5000"
+    networks:
+      - solidanet
+    command: ["panoptes"]
+
+networks:
+  solidanet:
+    ipam:
+      config:
+        - subnet: 171.27.0.0/16
+
