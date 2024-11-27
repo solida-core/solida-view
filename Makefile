@@ -11,7 +11,6 @@ help:
 	@echo "  "
 	@echo " options:"
 	@echo "     PORT      		TCP/IP port "
-	@echo " 	LOG_PATH		destination folder of log files"
 	@echo " "
 	@echo " usage: "
 	@echo "     make PORT=0000  start"
